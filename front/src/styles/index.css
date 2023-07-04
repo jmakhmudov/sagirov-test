@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url('bckg.png');
+    background-image: url('../../public/bckg.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
