@@ -2,7 +2,7 @@ import React from 'react';
 import Card from "./Card";
 import { useState } from 'react';
 
-const Hero = () => {
+const Hero = ({cards}) => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
     const handleMouseMove = (e) => {
@@ -33,16 +33,16 @@ const Hero = () => {
                 </div>
 
                 <div id="cards" className="cards" onMouseMove={handleMouseMove}>
-                    {Array.from(Array(4).keys()).map((index) => (
+                    {cards.map((card) => (
                         <div
-                            key={index}
+                            key={card.top}
                             className="card"
                             style={{
                                 '--mouse-x': `${mousePosition.x}px`,
                                 '--mouse-y': `${mousePosition.y}px`,
                             }}
                         >
-                            <Card />
+                            <Card top={card.top} value={card.value} bottom={card.bottom}/>
                         </div>
                     ))}
                 </div>

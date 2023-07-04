@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Museo';
-    src: url('assets/museosanscyrl_500.woff');
+    src: url('../assets/museosanscyrl_500.woff');
 }
 * {
     margin: 0;
@@ -17,4 +17,12 @@ body {
     background-repeat: no-repeat;
     background-color: #0d161f;
     max-width: 100dvw;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
 }

@@ -5,15 +5,12 @@ const Card = ({ top, value, bottom }) => {
             <div className="card-content">
                 <div className="top-text">
                     {top}
-                    1
                 </div>
                 <div className="value-text">
                     {value}
-                    2000
                 </div>
                 <div className="bottom-text">
                     {bottom}
-                    1
                 </div>
             </div>
         </div>

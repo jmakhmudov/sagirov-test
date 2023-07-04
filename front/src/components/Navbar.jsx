@@ -4,7 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ links }) => {
     const navMob = useRef(null)
 
     const openMenu = () => {
@@ -20,27 +20,21 @@ const Navbar = () => {
             <img src="./logo.png" alt="Logo" />
 
             <ul className="navlinks">
-                <li>Главная</li>
-                <li>Технология</li>
-                <li>Графика полетов</li>
-                <li>Гарантии</li>
-                <li>О компании</li>
-                <li>Контакты</li>
+                {links.map(link => (
+                    <a href={link.url}>{link.name}</a>
+                ))}
             </ul>
 
-            <FontAwesomeIcon onClick={openMenu} className='bars' icon={faBars} size='xl'/>
+            <FontAwesomeIcon onClick={openMenu} className='bars' icon={faBars} size='xl' />
 
             <div className='navlinks-mob-box' ref={navMob}>
                 <ul className="navlinks-mob">
-                    <li>Главная</li>
-                    <li>Технология</li>
-                    <li>Графика полетов</li>
-                    <li>Гарантии</li>
-                    <li>О компании</li>
-                    <li>Контакты</li>
+                    {links.map(link => (
+                        <a href={link.url}>{link.name}</a>
+                    ))}
                 </ul>
 
-                <FontAwesomeIcon className='close' onClick={closeMenu} icon={faX} size='xl'/>
+                <FontAwesomeIcon className='close' onClick={closeMenu} icon={faX} size='xl' />
             </div>
         </nav>
     )
