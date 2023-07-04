@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Museo';
+    src: url('assets/museosanscyrl_500.woff');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Museo, sans-serif;
+    color: white;
+    transition: 0.15s;
+}
+
+body {
+    background-image: url('bckg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #0d161f;
+    max-width: 100dvw;
+}

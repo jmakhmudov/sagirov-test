@@ -1,0 +1,80 @@
+#cards:hover>.card::after {
+    opacity: 1;
+}
+
+.card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 180px;
+    width: 180px;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card::before,
+.card::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+}
+
+.card::before {
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+            rgba(255, 255, 255, 0.121),
+            transparent 40%);
+    z-index: 3;
+}
+
+.card::after {
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+            rgba(255, 255, 255, 0.08),
+            transparent 40%);
+    z-index: 1;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    height: 180px;
+    width: 180px;
+}
+
+.value-text {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 991px) {
+    .card, 
+    .card .card-content {
+        height: 120px;
+        width: 120px;
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.057);
+    }
+
+    .top-text, 
+    .bottom-text {
+        font-size: 14px;
+        
+    }
+
+    .value-text {
+        font-size: 24px;
+    }
+}
