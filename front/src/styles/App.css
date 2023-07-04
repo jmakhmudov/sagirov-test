@@ -10,6 +10,7 @@
     width: 100vw;
     padding: 0 10vw;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .main-text {
@@ -63,9 +64,9 @@
 
 .figure {
     position: absolute;
-    bottom: 170px;
+    top: 58vh;
     left: 240px;
-
+    width: 31vw;
 }
 
 @media screen and (max-width: 991px) {
@@ -74,6 +75,9 @@
         display: none;
     }
 
+}
+
+@media screen and (max-width: 767px) {
     .hero {
         flex-direction: column;
         align-items: center;

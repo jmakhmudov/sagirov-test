@@ -15,6 +15,8 @@ body {
     background-image: url('bckg.png');
     background-position: top;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     background-color: #0d161f;
     max-width: 100dvw;
 }
