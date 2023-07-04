@@ -65,19 +65,15 @@
 .figure {
     position: absolute;
     top: 58vh;
-    left: 240px;
+    left: 19vw;
     width: 31vw;
 }
 
-@media screen and (max-width: 991px) {
-
+@media screen and (max-width: 767px) {
     .figure {
         display: none;
     }
-
-}
-
-@media screen and (max-width: 767px) {
+    
     .hero {
         flex-direction: column;
         align-items: center;
