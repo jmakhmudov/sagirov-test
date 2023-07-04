@@ -21,7 +21,7 @@ const Navbar = ({ links }) => {
 
             <ul className="navlinks">
                 {links.map(link => (
-                    <a href={link.url}>{link.name}</a>
+                    <a key={link.name} href={link.url}>{link.name}</a>
                 ))}
             </ul>
 
@@ -30,7 +30,7 @@ const Navbar = ({ links }) => {
             <div className='navlinks-mob-box' ref={navMob}>
                 <ul className="navlinks-mob">
                     {links.map(link => (
-                        <a href={link.url}>{link.name}</a>
+                        <a key={link.name} href={link.url}>{link.name}</a>
                     ))}
                 </ul>
 

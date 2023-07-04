@@ -15,8 +15,8 @@ function App() {
 
   const fetchData = async () => {
     try {
-      let resNav = await fetch('http://127.0.0.1:8000/links/')
-      let resCards = await fetch('http://127.0.0.1:8000/cards/')
+      let resNav = await fetch('http://jmakhmudov.pythonanywhere.com/links/')
+      let resCards = await fetch('http://jmakhmudov.pythonanywhere.com/cards/')
       resNav = await resNav.json()
       resCards = await resCards.json()
       setNav(resNav.results)
