@@ -40,7 +40,6 @@
     place-items: center;
     color: white;
     background-image: url('btn.png');
-    z-index: 100;
 }
 
 .start-btn img {
