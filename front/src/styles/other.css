@@ -9,10 +9,14 @@
     position: relative;
     height: 180px;
     width: 180px;
+    background-color: rgba(255, 255, 255, 0.005);
 }
 
 .card:hover::before {
     opacity: 1;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.427)) 1;
 }
 
 .card::before,
@@ -50,6 +54,7 @@
     z-index: 2;
     height: 180px;
     width: 180px;
+    font-weight: 300;
 }
 
 .value-text {
@@ -57,21 +62,29 @@
     font-weight: 700;
 }
 
+
+.mars {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 991px) {
-    .card, 
+    .mars {
+        display: none;
+    }
+
+    .card,
     .card .card-content {
         height: 120px;
         width: 120px;
     }
 
-    .card {
-        background-color: rgba(255, 255, 255, 0.057);
-    }
-
-    .top-text, 
+    .top-text,
     .bottom-text {
         font-size: 14px;
-        
+
     }
 
     .value-text {

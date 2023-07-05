@@ -11,14 +11,16 @@
     padding: 0 10vw;
     align-items: center;
     margin-bottom: 100px;
+    margin-top: 80px;
 }
 
 .main-text {
     font-size: 28px;
-    margin-bottom: 55px;
+    margin-bottom: 80px;
     background-image: linear-gradient(to right, #ffffff, #ff5500);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 300;
 }
 
 .main-text span {
@@ -28,17 +30,26 @@
 
 .start-btn {
     position: relative;
-    width: 250px;
-    height: 50px;
-    padding-top: 15px;
+    width: 180px;
+    height: 35px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.3);
-    border: solid #b1b1b150 1px;
     text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    display: grid;
+    place-items: center;
+    color: white;
+    background-image: url('btn.png');
+    z-index: 100;
 }
 
 .start-btn img {
     position: absolute;
+}
+
+.btn-img {
+    top: 0;
+    left: 0;
 }
 
 .start-btn .left {
@@ -64,16 +75,17 @@
 
 .figure {
     position: absolute;
-    top: 58vh;
-    left: 19vw;
-    width: 31vw;
+    top: 62vh;
+    left: 25vw;
+    width: 25vw;
+    height: 50px;
 }
 
 @media screen and (max-width: 767px) {
     .figure {
         display: none;
     }
-    
+
     .hero {
         flex-direction: column;
         align-items: center;

@@ -1,7 +1,15 @@
 @font-face {
     font-family: 'Museo';
     src: url('../assets/MuseoSansCyrl-500.otf');
+    font-weight: 500;
 }
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../assets//MuseoSansCyrl300.ttf');
+    font-weight: 300;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +20,7 @@
 }
 
 body {
-    background-image: url('../../public/bckg.png');
+    background-image: url('/bckg.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

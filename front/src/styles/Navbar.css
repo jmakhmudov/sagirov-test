@@ -5,7 +5,7 @@ nav {
     align-items: center;
     height: 65px;
     background-color: rgba(0, 0, 0, 0.3);
-    border-bottom:solid #b1b1b150 1px;
+    border-bottom: solid #b1b1b150 1px;
     padding: 0 10vw;
 }
 
@@ -20,15 +20,16 @@ nav img {
     justify-content: space-between;
 }
 
-.navlinks a{
+.navlinks a {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
+    padding-bottom: 5px;
 }
 
 .navlinks a:hover {
     color: #b1b1b1;
     cursor: pointer;
-    text-decoration: underline;
+    border-bottom: 1px solid #b1b1b1;
 }
 
 .navlinks-mob-box a {
@@ -57,12 +58,12 @@ nav img {
     right: 10vw;
 }
 
-.bars, 
+.bars,
 .close {
     cursor: pointer;
 }
 
-.navlinks-mob a{
+.navlinks-mob a {
     margin-bottom: 20px;
     text-align: center;
     font-size: 20px;
@@ -80,7 +81,7 @@ nav img {
         display: none;
     }
 
-    .bars, 
+    .bars,
     .navlinks-mob-box {
         display: block;
     }

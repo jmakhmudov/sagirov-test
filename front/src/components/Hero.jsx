@@ -17,6 +17,7 @@ const Hero = ({cards}) => {
     return (
         <section className="hero-container">
             <div className='hero'>
+                <img src="mars.png" className='mars' alt="" />
                 <div className='left-section'>
                     <div className="main-text">
                         <span>ПУТЕШЕСТВИЕ</span>
@@ -25,9 +26,10 @@ const Hero = ({cards}) => {
                     </div>
 
                     <div className='start-btn'>
+                        Начать путешествие
+                        
                         <img src="corner.png" alt="" className='left' />
                         <img src="corner.png" alt="" className='right' />
-                        Начать путешествие
                     </div>
 
                 </div>
