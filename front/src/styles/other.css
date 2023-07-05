@@ -55,11 +55,14 @@
     height: 180px;
     width: 180px;
     font-weight: 300;
+    font-size: 16px;
 }
 
 .value-text {
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 700;
+    margin-top: 8px;
+    margin-bottom: -8px;
 }
 
 
